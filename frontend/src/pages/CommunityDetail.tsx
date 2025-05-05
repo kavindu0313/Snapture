@@ -29,7 +29,7 @@ const CommunityDetail: React.FC = () => {
   const [sortOption, setSortOption] = useState<'newest' | 'oldest' | 'mostLiked'>('newest');
   const [searchQuery, setSearchQuery] = useState('');
   const [activityFeed, setActivityFeed] = useState<Array<{id: string, type: 'join' | 'post' | 'like', user: User, timestamp: string, content?: string}>>([]);
-
+  
   useEffect(() => {
     const fetchCommunityData = async () => {
       if (!id) return;
@@ -83,7 +83,7 @@ const CommunityDetail: React.FC = () => {
         setIsLoading(false);
       }
     };
-
+    
     fetchCommunityData();
   }, [id, user]);
   
@@ -110,7 +110,7 @@ const CommunityDetail: React.FC = () => {
               console.error(`Failed to fetch user with ID ${memberId}:`, error);
             }
           }
-          
+          //return data to community detail page
           setMembers(fetchedMembers);
         }
       } catch (err) {
@@ -164,7 +164,7 @@ const CommunityDetail: React.FC = () => {
       setHasMore(false);
     }
   };
-
+  
   if (isLoading) {
     return (
       <Layout>

@@ -171,7 +171,7 @@ const Communities: React.FC = () => {
             </button>
           </div>
         )}
-        
+        //error message
         {error && (
           <div className="p-4 mb-6 text-red-700 bg-red-100 rounded-md">
             {error}
