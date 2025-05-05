@@ -239,6 +239,8 @@ const Messages: React.FC = () => {
     setMessages(prev => [...prev, newMsg]);
     
     // Update conversation with new last message
+    // In a real app, this would be an API call to send the message
+    // and update the conversation in the database
     setConversations(prev => 
       prev.map(c => c.id === activeConversation.id ? {
         ...c,
