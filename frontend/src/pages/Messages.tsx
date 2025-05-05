@@ -408,6 +408,7 @@ const Messages: React.FC = () => {
                 </div>
                 
                 {/* Image Preview */}
+                {/* Image Preview ---*/}
                 {imagePreview && (
                   <div className={`p-2 ${darkMode ? 'bg-gray-800' : 'bg-gray-100'}`}>
                     <div className="relative inline-block">
