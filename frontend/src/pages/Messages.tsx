@@ -324,6 +324,7 @@ const Messages: React.FC = () => {
             </div>
           </div>
           
+          {/* Message Area--- */}
           {/* Message Area */}
           <div className="flex-1 flex flex-col">
             {activeConversation ? (
