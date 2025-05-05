@@ -1,5 +1,5 @@
 package com.photoshare.api.model;
-
+// This class represents a comment in the application, including details such as the content, user, and timestamps.
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
