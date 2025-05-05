@@ -7,6 +7,8 @@ import java.util.Date;
 
 @Data
 @Document(collection = "comments")
+// The @Document annotation indicates that this class is a MongoDB document, and the collection name is "comments".
+// The @Data annotation from Lombok generates getters, setters, equals, hashCode, and toString methods automatically.
 public class Comment {
     @Id
     private String id;
