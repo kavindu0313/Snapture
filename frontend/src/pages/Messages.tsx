@@ -146,6 +146,8 @@ const Messages: React.FC = () => {
     return () => {
       clearInterval(typingTimer);
       // socketRef.current?.disconnect();
+      // socketRef.current = null;
+      // Cleanup socket connection
     };
   }, [activeConversation]);
 
