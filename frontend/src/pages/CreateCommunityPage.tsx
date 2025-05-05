@@ -11,7 +11,7 @@ const CreateCommunityPage: React.FC = () => {
   if (!isAuthenticated) {
     return <Navigate to="/login" />;
   }
-
+//return data to create community page
   return (
     <Layout>
       <div className="max-w-3xl mx-auto">

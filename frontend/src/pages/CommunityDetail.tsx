@@ -7,7 +7,7 @@ import PostCard from '../components/post/PostCard';
 import { useAuth } from '../context/AuthContext';
 import { useTheme } from '../context/ThemeContext';
 import InfinitePostList from '../components/post/InfinitePostList';
-
+ //community detail page
 const CommunityDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();

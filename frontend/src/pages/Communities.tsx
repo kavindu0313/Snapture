@@ -42,7 +42,7 @@ const Communities: React.FC = () => {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    
+    //search for communities
     if (searchQuery.trim()) {
       const fetchSearchResults = async () => {
         try {
@@ -60,7 +60,7 @@ const Communities: React.FC = () => {
       fetchSearchResults();
     }
   };
-
+  
   const handleJoinLeave = (communityId: string, joined: boolean) => {
     // Update user communities list when joining/leaving
     if (joined) {
@@ -74,7 +74,7 @@ const Communities: React.FC = () => {
   };
 
   const displayedCommunities = activeTab === 'all' ? communities : userCommunities;
-
+  //return data to communities page
   return (
     <Layout>
       <div className="max-w-6xl mx-auto">
