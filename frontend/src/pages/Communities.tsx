@@ -5,7 +5,7 @@ import { communities as communityAPI } from '../services/apiConfig';
 import Layout from '../components/layout/Layout';
 import CommunityCard from '../components/community/CommunityCard';
 import { useAuth } from '../context/AuthContext';
-
+//import { Link } from 'react-router-dom';  
 const Communities: React.FC = () => {
   const { isAuthenticated } = useAuth();
   const [communities, setCommunities] = useState<Community[]>([]);
