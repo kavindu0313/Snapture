@@ -227,7 +227,7 @@ const Messages: React.FC = () => {
       timestamp: new Date().toISOString(),
       read: false
     };
-    
+    //set messages
     setMessages(prev => [...prev, newMsg]);
     
     // Update conversation with new last message
