@@ -46,6 +46,8 @@ const Messages: React.FC = () => {
   // Mock data for conversations
   useEffect(() => {
     // In a real app, this would be an API call
+    // Mock conversations data
+    // This would be replaced with an API call to fetch conversations for the logged-in user
     const mockConversations: Conversation[] = [
       {
         id: '1',
@@ -154,6 +156,8 @@ const Messages: React.FC = () => {
   useEffect(() => {
     if (activeConversation) {
       // In a real app, this would be an API call
+      // Mock messages for the active conversation
+      // This would be replaced with an API call to fetch messages for the active conversation
       const mockMessages: Message[] = [
         {
           id: 'm101',
