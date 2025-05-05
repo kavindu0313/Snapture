@@ -433,6 +433,7 @@ const Messages: React.FC = () => {
                 )}
                 
                 {/* Message Input */}
+                 {/* Message Input -----*/}
                 <div className={`p-4 border-t flex ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
                   <label htmlFor="image-upload" className={`p-2 rounded-full mr-2 cursor-pointer ${darkMode ? 'hover:bg-gray-700' : 'hover:bg-gray-100'}`}>
                     <svg xmlns="http://www.w3.org/2000/svg" className={`h-6 w-6 ${darkMode ? 'text-gray-400' : 'text-gray-500'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
