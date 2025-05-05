@@ -129,6 +129,8 @@ const Messages: React.FC = () => {
   }, [user]);
 
   // Mock socket connection
+  // This would be replaced with a real socket connection in a real app
+  // const socket = io('http://localhost:8080'); // Replace with your socket server URL
   useEffect(() => {
     // In a real app, this would connect to a real socket server
     // socketRef.current = io('http://localhost:8080');
