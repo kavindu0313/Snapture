@@ -267,7 +267,7 @@ const CommunityDetail: React.FC = () => {
                   {isJoined ? 'Leave Community' : 'Join Community'}
                 </button>
               )}
-              
+              //edit community
               {isCreator && (
                 <button
                   onClick={() => navigate(`/communities/${community.id}/edit`)}
