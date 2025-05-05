@@ -54,7 +54,7 @@ const Messages: React.FC = () => {
           username: 'Isuru_photography',
           profilePicture: 'https://i.pinimg.com/736x/6a/b0/27/6ab02796eef930df247e93716324d736.jpg',
           isOnline: true
-        },
+        },//last message interface
         lastMessage: {
           id: 'm1',
           senderId: '101',
@@ -122,7 +122,7 @@ const Messages: React.FC = () => {
       }
 
     ];
-    
+    //set conversations
     setConversations(mockConversations);
   }, [user]);
 
