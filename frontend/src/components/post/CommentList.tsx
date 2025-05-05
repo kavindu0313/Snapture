@@ -9,7 +9,8 @@ interface CommentListProps {
   comments: Comment[];
   postId: string;
 }
-
+// This component displays a list of comments for a post, allowing users to edit and delete their own comments.
+// It uses the `useAuth` context to get the current user and the `commentAPI` service to handle API requests.
 const CommentList: React.FC<CommentListProps> = ({ comments, postId }) => {
   const { user } = useAuth();
   const [commentsList, setCommentsList] = useState<Comment[]>(comments);
