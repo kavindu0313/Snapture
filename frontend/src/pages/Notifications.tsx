@@ -12,7 +12,7 @@ const Notifications: React.FC = () => {
   if (!isAuthenticated) {
     return <Navigate to="/login" />;
   }
-
+//notification interface
   return (
     <Layout>
       <NotificationCenter />
