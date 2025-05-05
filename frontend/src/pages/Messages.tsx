@@ -12,7 +12,7 @@ interface User {
   isOnline: boolean;
   lastSeen?: string;
 }
-
+ //message interface
 interface Message {
   id: string;
   senderId: string;
