@@ -28,6 +28,7 @@ const CommentList: React.FC<CommentListProps> = ({ comments, postId }) => {
   };
 // This function handles the saving of an edited comment. It updates the comment in the state and makes an API call to update it on the server.
   // It also resets the editing state.
+  //diting state.
   const handleSaveEdit = async (commentId: string) => {
     if (!editText.trim()) return;
 
@@ -42,6 +43,7 @@ const CommentList: React.FC<CommentListProps> = ({ comments, postId }) => {
       console.error('Failed to update comment:', error);
     }
   };
+  
 
   const handleDelete = async (commentId: string) => {
     try {
