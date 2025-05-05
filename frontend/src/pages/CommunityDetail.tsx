@@ -371,7 +371,7 @@ const CommunityDetail: React.FC = () => {
                       <PostCard post={post} />
                     </div>
                   ))}
-                  
+                  //load more posts
                   {hasMore && (
                     <div className="flex justify-center my-4">
                       <button 
