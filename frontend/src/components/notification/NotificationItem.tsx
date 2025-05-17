@@ -101,6 +101,7 @@ const NotificationItem: React.FC<NotificationItemProps> = ({ notification, onMar
           </div>
         );
       default:
+        //default
         return (
           <div className="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full">
             <svg
