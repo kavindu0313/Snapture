@@ -20,6 +20,6 @@ const Notifications: React.FC = () => {
     </Layout>
   );
 };
-//
+//export
 
 export default Notifications;
