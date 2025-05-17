@@ -143,6 +143,7 @@ const NotificationItem: React.FC<NotificationItemProps> = ({ notification, onMar
         </p>
       </div>
       
+      {/* notification read */}
       {!notification.read && (
         <div className="flex-shrink-0 w-2 h-2 mt-2 bg-blue-500 rounded-full"></div>
       )}
