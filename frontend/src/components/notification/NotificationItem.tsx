@@ -37,6 +37,7 @@ const NotificationItem: React.FC<NotificationItemProps> = ({ notification, onMar
   const getNotificationIcon = () => {
     switch (notification.type) {
       case 'like':
+        // like
         return (
           <div className="flex items-center justify-center w-10 h-10 bg-red-100 rounded-full">
             <svg
