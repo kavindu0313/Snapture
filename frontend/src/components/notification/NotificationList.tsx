@@ -27,6 +27,8 @@ const NotificationList: React.FC = () => {
     fetchNotifications();
   }, []);
 
+
+//   mark all notifications as read
   const handleMarkAllAsRead = async () => {
     try {
       await notificationAPI.markAllAsRead();
