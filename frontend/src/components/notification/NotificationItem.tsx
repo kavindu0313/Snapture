@@ -32,7 +32,8 @@ const NotificationItem: React.FC<NotificationItemProps> = ({ notification, onMar
         return '#';
     }
   };
-
+ 
+  //getNotificationIcon
   const getNotificationIcon = () => {
     switch (notification.type) {
       case 'like':
