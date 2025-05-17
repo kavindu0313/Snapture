@@ -18,7 +18,7 @@ const NotificationItem: React.FC<NotificationItemProps> = ({ notification, onMar
       console.error('Failed to mark notification as read:', error);
     }
   };
-
+  //getNotificationLink
   const getNotificationLink = () => {
     switch (notification.type) {
       case 'like':
