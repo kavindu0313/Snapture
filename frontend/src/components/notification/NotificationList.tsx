@@ -8,7 +8,9 @@ const NotificationList: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
 
+//   fetch notifications
   useEffect(() => {
+    
     const fetchNotifications = async () => {
       try {
         setIsLoading(true);
@@ -25,6 +27,8 @@ const NotificationList: React.FC = () => {
     fetchNotifications();
   }, []);
 
+
+//   mark all notifications as read
   const handleMarkAllAsRead = async () => {
     try {
       await notificationAPI.markAllAsRead();

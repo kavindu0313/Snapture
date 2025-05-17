@@ -18,7 +18,7 @@ const NotificationItem: React.FC<NotificationItemProps> = ({ notification, onMar
       console.error('Failed to mark notification as read:', error);
     }
   };
-
+  //getNotificationLink
   const getNotificationLink = () => {
     switch (notification.type) {
       case 'like':
@@ -32,10 +32,12 @@ const NotificationItem: React.FC<NotificationItemProps> = ({ notification, onMar
         return '#';
     }
   };
-
+ 
+  //getNotificationIcon
   const getNotificationIcon = () => {
     switch (notification.type) {
       case 'like':
+        // like
         return (
           <div className="flex items-center justify-center w-10 h-10 bg-red-100 rounded-full">
             <svg
@@ -53,6 +55,7 @@ const NotificationItem: React.FC<NotificationItemProps> = ({ notification, onMar
           </div>
         );
       case 'comment':
+        //comment
         return (
           <div className="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full">
             <svg
@@ -70,6 +73,7 @@ const NotificationItem: React.FC<NotificationItemProps> = ({ notification, onMar
           </div>
         );
       case 'follow':
+        //follow
         return (
           <div className="flex items-center justify-center w-10 h-10 bg-green-100 rounded-full">
             <svg
@@ -83,6 +87,7 @@ const NotificationItem: React.FC<NotificationItemProps> = ({ notification, onMar
           </div>
         );
       case 'community':
+        //community
         return (
           <div className="flex items-center justify-center w-10 h-10 bg-purple-100 rounded-full">
             <svg
@@ -96,6 +101,7 @@ const NotificationItem: React.FC<NotificationItemProps> = ({ notification, onMar
           </div>
         );
       default:
+        //default
         return (
           <div className="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full">
             <svg
@@ -142,6 +148,7 @@ const NotificationItem: React.FC<NotificationItemProps> = ({ notification, onMar
         </p>
       </div>
       
+      {/* notification read */}
       {!notification.read && (
         <div className="flex-shrink-0 w-2 h-2 mt-2 bg-blue-500 rounded-full"></div>
       )}
