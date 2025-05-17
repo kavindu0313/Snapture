@@ -12,7 +12,7 @@ interface User {
   isOnline: boolean;
   lastSeen?: string;
 }
-
+ //message interface
 interface Message {
   id: string;
   senderId: string;
@@ -56,7 +56,7 @@ const Messages: React.FC = () => {
           username: 'Isuru_photography',
           profilePicture: 'https://i.pinimg.com/736x/6a/b0/27/6ab02796eef930df247e93716324d736.jpg',
           isOnline: true
-        },
+        },//last message interface
         lastMessage: {
           id: 'm1',
           senderId: '101',
@@ -124,7 +124,7 @@ const Messages: React.FC = () => {
       }
 
     ];
-    
+    //set conversations
     setConversations(mockConversations);
   }, [user]);
 
@@ -233,7 +233,7 @@ const Messages: React.FC = () => {
       timestamp: new Date().toISOString(),
       read: false
     };
-    
+    //set messages
     setMessages(prev => [...prev, newMsg]);
     
     // Update conversation with new last message
