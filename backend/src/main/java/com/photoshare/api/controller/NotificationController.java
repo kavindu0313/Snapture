@@ -18,6 +18,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/notifications")
 @CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
+// @CrossOrigin(origins = "*", allowCredentials = "true")
 public class NotificationController {
 
     @Autowired
