@@ -200,7 +200,7 @@ const CategoryPage: React.FC = () => {
           // For demo purposes, we'll just randomize for "recent"
           sortedImages.sort(() => Math.random() - 0.5);
         }
-        
+        //set images
         setImages(sortedImages);
       } else {
         setImages([]);
