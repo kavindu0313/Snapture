@@ -93,6 +93,7 @@ public class LikeController {
         }
     }
 
+    // Check if user has liked a post
     @GetMapping("/check")
     public ResponseEntity<?> checkIfUserLikedPost(
             @RequestParam String postId) {
