@@ -131,7 +131,7 @@ const categoryImages = {
       username: 'diverphotog',
       likes: 198
     }
-  ],
+  ],//end wildlife
   architecture: [
     {
       id: '1',
