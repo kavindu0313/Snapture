@@ -22,6 +22,8 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/likes")
 @CrossOrigin(origins = "http://localhost:3000")
+
+// LikeController @CrossOrigin(origins = "http://localhost:3000")
 public class LikeController {
 
     @Autowired
@@ -36,12 +38,14 @@ public class LikeController {
     @Autowired
     private NotificationService notificationService;
 
+    // Get all likes for a specific post
     @GetMapping("/post/{postId}")
     public ResponseEntity<List<Like>> getLikesByPostId(@PathVariable String postId) {
         List<Like> likes = likeService.getLikesByPostId(postId);
         return ResponseEntity.ok(likes);
     }
 
+    // Toggle like
     @PostMapping
     public ResponseEntity<?> toggleLike(@RequestBody Map<String, String> request) {
         String postId = request.get("postId");
@@ -89,6 +93,7 @@ public class LikeController {
         }
     }
 
+    // Check if user has liked a post
     @GetMapping("/check")
     public ResponseEntity<?> checkIfUserLikedPost(
             @RequestParam String postId) {

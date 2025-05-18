@@ -18,6 +18,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/notifications")
 @CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
+// @CrossOrigin(origins = "*", allowCredentials = "true")
 public class NotificationController {
 
     @Autowired
@@ -41,6 +42,7 @@ public class NotificationController {
         }
     }
 
+    // Get unread notifications
     @GetMapping("/unread")
     public ResponseEntity<List<Notification>> getUnreadNotifications() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -56,6 +58,7 @@ public class NotificationController {
         }
     }
 
+    // Get unread notification count
     @GetMapping("/count")
     public ResponseEntity<?> getUnreadNotificationCount() {
         // For testing purposes, return a mock count if authentication is not available
@@ -83,6 +86,7 @@ public class NotificationController {
         }
     }
 
+    // Mark notification as read
     @PostMapping("/{id}/read")
     public ResponseEntity<?> markAsRead(@PathVariable String id) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -100,6 +104,7 @@ public class NotificationController {
         }
     }
 
+    // Mark all notifications as read
     @PostMapping("/read-all")
     public ResponseEntity<?> markAllAsRead() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -124,7 +129,7 @@ public class NotificationController {
             return ResponseEntity.status(404).body(response);
         }
     }
-
+    // Delete notification
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteNotification(@PathVariable String id) {
         boolean deleted = notificationService.deleteNotification(id);

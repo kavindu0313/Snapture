@@ -5,11 +5,12 @@ import { useAuth } from '../../context/AuthContext';
 import { commentAPI } from '../../services/api';
 import TimeAgo from 'react-timeago';
 
+//CommentList Props
 interface CommentListProps {
   comments: Comment[];
   postId: string;
 }
-
+//CommentList 
 const CommentList: React.FC<CommentListProps> = ({ comments, postId }) => {
   const { user } = useAuth();
   const [commentsList, setCommentsList] = useState<Comment[]>(comments);
@@ -25,6 +26,7 @@ const CommentList: React.FC<CommentListProps> = ({ comments, postId }) => {
     setEditingId(null);
     setEditText('');
   };
+  //CommentList
 
   const handleSaveEdit = async (commentId: string) => {
     if (!editText.trim()) return;
@@ -55,6 +57,7 @@ const CommentList: React.FC<CommentListProps> = ({ comments, postId }) => {
   }
 
   return (
+    // CommentList return
     <div className="space-y-4">
       {commentsList.map(comment => (
         <div key={comment.id} className="flex">
@@ -68,12 +71,14 @@ const CommentList: React.FC<CommentListProps> = ({ comments, postId }) => {
           <div className="flex-grow ml-3">
             {editingId === comment.id ? (
               <div className="space-y-2">
+                {/*  */}
                 <textarea
                   value={editText}
                   onChange={(e) => setEditText(e.target.value)}
                   className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
                   rows={2}
                 />
+                {/* Save and Cancel buttons  */}
                 <div className="flex space-x-2">
                   <button
                     onClick={() => handleSaveEdit(comment.id)}
@@ -81,6 +86,7 @@ const CommentList: React.FC<CommentListProps> = ({ comments, postId }) => {
                   >
                     Save
                   </button>
+                  {/*save button process */}
                   <button
                     onClick={handleCancelEdit}
                     className="px-3 py-1 text-xs text-gray-700 bg-gray-200 rounded-md hover:bg-gray-300"

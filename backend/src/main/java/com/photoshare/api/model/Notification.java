@@ -7,6 +7,7 @@ import java.util.Date;
 
 @Data
 @Document(collection = "notifications")
+// implement notifications
 public class Notification {
     @Id
     private String id;

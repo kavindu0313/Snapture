@@ -7,6 +7,7 @@ import java.util.Date;
 
 @Data
 @Document(collection = "likes")
+// @Document(collection = "likes")
 public class Like {
     @Id
     private String id;
