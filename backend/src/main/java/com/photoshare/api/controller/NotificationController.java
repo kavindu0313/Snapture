@@ -104,6 +104,7 @@ public class NotificationController {
         }
     }
 
+    // Mark all notifications as read
     @PostMapping("/read-all")
     public ResponseEntity<?> markAllAsRead() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -128,7 +129,7 @@ public class NotificationController {
             return ResponseEntity.status(404).body(response);
         }
     }
-
+    // Delete notification
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteNotification(@PathVariable String id) {
         boolean deleted = notificationService.deleteNotification(id);
