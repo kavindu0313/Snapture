@@ -58,6 +58,7 @@ public class NotificationController {
         }
     }
 
+    // Get unread notification count
     @GetMapping("/count")
     public ResponseEntity<?> getUnreadNotificationCount() {
         // For testing purposes, return a mock count if authentication is not available
