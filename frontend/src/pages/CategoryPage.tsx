@@ -139,7 +139,7 @@ const categoryImages = {
       title: 'Eiffel Tower View',
       username: 'architecturelover',
       likes: 276
-    },
+    },//end architecture
     {
       id: '2',
       imageUrl: 'https://i.pinimg.com/736x/d1/e8/a3/d1e8a3a3a3a3a3a3a3a3a3a3a3a3a3a3.jpg',
