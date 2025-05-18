@@ -86,6 +86,7 @@ public class NotificationController {
         }
     }
 
+    // Mark notification as read
     @PostMapping("/{id}/read")
     public ResponseEntity<?> markAsRead(@PathVariable String id) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
