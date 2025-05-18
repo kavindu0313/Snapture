@@ -5,11 +5,12 @@ import { useAuth } from '../../context/AuthContext';
 import { commentAPI } from '../../services/api';
 import TimeAgo from 'react-timeago';
 
+//CommentList Props
 interface CommentListProps {
   comments: Comment[];
   postId: string;
 }
-
+//CommentList 
 const CommentList: React.FC<CommentListProps> = ({ comments, postId }) => {
   const { user } = useAuth();
   const [commentsList, setCommentsList] = useState<Comment[]>(comments);
