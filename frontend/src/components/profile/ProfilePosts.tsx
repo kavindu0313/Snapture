@@ -11,7 +11,7 @@ const ProfilePosts: React.FC<ProfilePostsProps> = ({ userId }) => {
   const [posts, setPosts] = useState<Post[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
-
+  //fetch user posts
   useEffect(() => {
     const fetchUserPosts = async () => {
       try {
