@@ -11,7 +11,7 @@ const Profile: React.FC = () => {
   const { username } = useParams<{ username: string }>();
   const navigate = useNavigate();
   const { user: currentUser } = useAuth();
-  
+  //profile state
   const [profile, setProfile] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
