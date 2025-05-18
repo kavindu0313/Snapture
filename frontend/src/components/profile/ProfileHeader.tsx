@@ -7,7 +7,7 @@ interface ProfileHeaderProps {
   profile: User;
   onProfileUpdate: (updatedProfile: User) => void;
 }
-
+//profile header
 const ProfileHeader: React.FC<ProfileHeaderProps> = ({ profile, onProfileUpdate }) => {
   const { user } = useAuth();
   const [isFollowing, setIsFollowing] = useState(
