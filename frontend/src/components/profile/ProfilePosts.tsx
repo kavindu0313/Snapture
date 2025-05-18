@@ -25,7 +25,7 @@ const ProfilePosts: React.FC<ProfilePostsProps> = ({ userId }) => {
         setIsLoading(false);
       }
     };
-
+    //fetch user posts
     fetchUserPosts();
   }, [userId]);
 
