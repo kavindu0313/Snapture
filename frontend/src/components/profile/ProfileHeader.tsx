@@ -13,7 +13,9 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({ profile, onProfileUpdate 
   const [isFollowing, setIsFollowing] = useState(
     user ? profile.followers.includes(user.id) : false
   );
+  //followers count
   const [followersCount, setFollowersCount] = useState(profile.followers.length);
+  //editing
   const [isEditing, setIsEditing] = useState(false);
   const [editData, setEditData] = useState({
     fullName: profile.fullName,
