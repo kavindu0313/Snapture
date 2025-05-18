@@ -6,7 +6,7 @@ import PostCard from '../post/PostCard';
 interface ProfilePostsProps {
   userId: string;
 }
-
+//profile posts
 const ProfilePosts: React.FC<ProfilePostsProps> = ({ userId }) => {
   const [posts, setPosts] = useState<Post[]>([]);
   const [isLoading, setIsLoading] = useState(true);
