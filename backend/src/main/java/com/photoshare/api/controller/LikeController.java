@@ -22,6 +22,8 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/likes")
 @CrossOrigin(origins = "http://localhost:3000")
+
+// LikeController @CrossOrigin(origins = "http://localhost:3000")
 public class LikeController {
 
     @Autowired
