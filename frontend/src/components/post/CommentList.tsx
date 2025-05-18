@@ -26,6 +26,7 @@ const CommentList: React.FC<CommentListProps> = ({ comments, postId }) => {
     setEditingId(null);
     setEditText('');
   };
+  //CommentList
 
   const handleSaveEdit = async (commentId: string) => {
     if (!editText.trim()) return;
@@ -56,6 +57,7 @@ const CommentList: React.FC<CommentListProps> = ({ comments, postId }) => {
   }
 
   return (
+    // CommentList return
     <div className="space-y-4">
       {commentsList.map(comment => (
         <div key={comment.id} className="flex">
