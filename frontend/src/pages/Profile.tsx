@@ -31,7 +31,7 @@ const Profile: React.FC = () => {
         setIsLoading(false);
       }
     };
-
+    //fetch profile
     fetchProfile();
   }, [username]);
 
