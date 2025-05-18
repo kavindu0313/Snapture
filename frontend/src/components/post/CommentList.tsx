@@ -71,6 +71,7 @@ const CommentList: React.FC<CommentListProps> = ({ comments, postId }) => {
           <div className="flex-grow ml-3">
             {editingId === comment.id ? (
               <div className="space-y-2">
+                {/*  */}
                 <textarea
                   value={editText}
                   onChange={(e) => setEditText(e.target.value)}
@@ -85,6 +86,7 @@ const CommentList: React.FC<CommentListProps> = ({ comments, postId }) => {
                   >
                     Save
                   </button>
+                  {/*save button process */}
                   <button
                     onClick={handleCancelEdit}
                     className="px-3 py-1 text-xs text-gray-700 bg-gray-200 rounded-md hover:bg-gray-300"
