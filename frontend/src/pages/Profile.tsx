@@ -44,7 +44,7 @@ const Profile: React.FC = () => {
       // updateUser(updatedProfile);
     }
   };
-
+  //loading
   if (isLoading) {
     return (
       <Layout>
