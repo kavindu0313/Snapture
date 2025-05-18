@@ -68,7 +68,7 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({ profile, onProfileUpdate 
       setIsLoading(false);
     }
   };
-
+  //profile header
   return (
     <div className="p-6 mb-6 bg-white rounded-lg shadow-sm">
       <div className="flex flex-col items-center md:flex-row md:items-start">
