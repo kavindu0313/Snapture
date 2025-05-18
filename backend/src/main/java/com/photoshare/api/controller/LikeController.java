@@ -45,6 +45,7 @@ public class LikeController {
         return ResponseEntity.ok(likes);
     }
 
+    // Toggle like
     @PostMapping
     public ResponseEntity<?> toggleLike(@RequestBody Map<String, String> request) {
         String postId = request.get("postId");
