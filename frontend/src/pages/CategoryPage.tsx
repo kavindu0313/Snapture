@@ -186,7 +186,7 @@ const CategoryPage: React.FC = () => {
   const [images, setImages] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [sortBy, setSortBy] = useState<'popular' | 'recent'>('popular');
-
+//use effect
   useEffect(() => {
     // Simulate API call to fetch images for the category
     setIsLoading(true);
