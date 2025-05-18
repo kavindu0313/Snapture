@@ -38,6 +38,7 @@ public class LikeController {
     @Autowired
     private NotificationService notificationService;
 
+    // Get all likes for a specific post
     @GetMapping("/post/{postId}")
     public ResponseEntity<List<Like>> getLikesByPostId(@PathVariable String postId) {
         List<Like> likes = likeService.getLikesByPostId(postId);
