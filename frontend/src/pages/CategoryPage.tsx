@@ -205,6 +205,7 @@ const CategoryPage: React.FC = () => {
       } else {
         setImages([]);
       }
+      //set loading
       setIsLoading(false);
     }, 800);
   }, [category, sortBy]);
