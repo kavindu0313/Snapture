@@ -28,7 +28,7 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({ profile, onProfileUpdate 
 
   const handleFollow = async () => {
     if (!user) return;
-
+    //follow/unfollow
     try {
       setIsLoading(true);
       if (isFollowing) {
