@@ -34,7 +34,7 @@ const Profile: React.FC = () => {
     //fetch profile
     fetchProfile();
   }, [username]);
-
+  //handle profile update
   const handleProfileUpdate = (updatedProfile: User) => {
     setProfile(updatedProfile);
     
