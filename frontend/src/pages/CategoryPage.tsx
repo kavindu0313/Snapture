@@ -241,7 +241,7 @@ const CategoryPage: React.FC = () => {
           <div className="flex items-center space-x-2">
             <span className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Sort by:</span>
             <select
-              value={sortBy}
+              value={sortBy}//sort by
               onChange={(e) => setSortBy(e.target.value as 'popular' | 'recent')}
               className={`px-3 py-1.5 rounded-md text-sm ${
                 darkMode 
