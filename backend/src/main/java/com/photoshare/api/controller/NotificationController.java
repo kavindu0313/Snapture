@@ -42,6 +42,7 @@ public class NotificationController {
         }
     }
 
+    // Get unread notifications
     @GetMapping("/unread")
     public ResponseEntity<List<Notification>> getUnreadNotifications() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
