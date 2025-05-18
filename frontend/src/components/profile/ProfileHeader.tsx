@@ -105,7 +105,7 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({ profile, onProfileUpdate 
               </button>
             )}
           </div>
-          
+          //edit profile
           {isEditing ? (
             <div className="space-y-4">
               <div>
