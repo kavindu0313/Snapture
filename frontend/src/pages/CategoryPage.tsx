@@ -77,8 +77,8 @@ const categoryImages = {
       title: 'Black and White Portrait',
       username: 'monochromeartist',
       likes: 312
-    }
-  ],
+    }//
+  ],//
   street: [
     {
       id: '1',
@@ -176,8 +176,8 @@ const categoryImages = {
       title: 'Snowflake Close-up',
       username: 'wintermacro',
       likes: 265
-    }
-  ]
+    }//end macro
+  ]//end category images
 };
 
 const CategoryPage: React.FC = () => {
