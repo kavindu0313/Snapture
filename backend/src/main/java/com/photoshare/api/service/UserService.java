@@ -51,7 +51,7 @@ public class UserService {
         }
         return null;
     }
-
+//delete user
     public boolean deleteUser(String id) {
         if (userRepository.existsById(id)) {
             userRepository.deleteById(id);
