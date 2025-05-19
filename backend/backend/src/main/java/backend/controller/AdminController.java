@@ -120,7 +120,7 @@ public class AdminController {
                     if (adminDetails.getRole() != null) {
                         admin.setRole(adminDetails.getRole());
                     }
-                    
+                    //update last login time
                     AdminModel updatedAdmin = adminRepository.save(admin);
                     // Don't return password
                     updatedAdmin.setPassword(null);
