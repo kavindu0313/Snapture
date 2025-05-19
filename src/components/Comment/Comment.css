@@ -1,0 +1,147 @@
+.comment {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.comment:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.comment-user {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.comment-username {
+  font-weight: 600;
+  color: #1e3c72;
+}
+
+.comment-date {
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+
+.comment-edited {
+  color: #6c757d;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.comment-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-comment-btn,
+.delete-comment-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.edit-comment-btn {
+  color: #1e3c72;
+}
+
+.edit-comment-btn:hover {
+  background-color: #e3f2fd;
+}
+
+.delete-comment-btn {
+  color: #e74c3c;
+}
+
+.delete-comment-btn:hover {
+  background-color: #ffebee;
+}
+
+.comment-content {
+  color: #333;
+  line-height: 1.5;
+}
+
+.comment-content p {
+  margin: 0;
+  word-break: break-word;
+}
+
+.comment-deleting {
+  color: #6c757d;
+  font-style: italic;
+}
+
+.comment-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment-edit-textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.comment-edit-textarea:focus {
+  outline: none;
+  border-color: #1e3c72;
+  box-shadow: 0 0 0 3px rgba(30, 60, 114, 0.1);
+}
+
+.comment-edit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancel-edit-btn,
+.save-edit-btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+}
+
+.cancel-edit-btn {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  border: 1px solid #ced4da;
+}
+
+.cancel-edit-btn:hover {
+  background-color: #e9ecef;
+}
+
+.save-edit-btn {
+  background-color: #1e3c72;
+  color: white;
+}
+
+.save-edit-btn:hover {
+  background-color: #2a5298;
+}

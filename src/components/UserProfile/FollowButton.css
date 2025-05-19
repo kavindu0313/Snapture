@@ -1,0 +1,79 @@
+.follow-button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  min-width: 90px;
+  background-color: #1e3c72;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.follow-button:hover {
+  background-color: #2a5298;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(30, 60, 114, 0.2);
+}
+
+.follow-button.following {
+  background-color: #f8f9fa;
+  color: #1e3c72;
+  border: 1px solid #1e3c72;
+}
+
+.follow-button.following:hover {
+  background-color: #e2e6ea;
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+.follow-button.loading {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.loading-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: currentColor;
+  animation: pulse 1.5s infinite;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .follow-button {
+    width: 100%;
+    padding: 10px;
+  }
+}

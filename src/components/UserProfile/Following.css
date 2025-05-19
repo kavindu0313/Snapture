@@ -1,0 +1,164 @@
+.following-container {
+  padding: 20px;
+}
+
+.following-title {
+  color: #1e3c72;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.following-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.following-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  transition: all 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.following-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.following-info {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.following-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.following-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.following-details {
+  flex-grow: 1;
+}
+
+.following-name {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.following-actions {
+  flex-shrink: 0;
+}
+
+.unfollow-btn {
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: #f8f9fa;
+  color: #1e3c72;
+  border: 1px solid #1e3c72;
+}
+
+.unfollow-btn:hover {
+  background-color: #e2e6ea;
+}
+
+.following-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 4px solid #1e3c72;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.following-error {
+  padding: 20px;
+  text-align: center;
+  color: #e74c3c;
+}
+
+.retry-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.retry-btn:hover {
+  background-color: #c0392b;
+}
+
+.no-following {
+  padding: 30px;
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .following-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .following-actions {
+    width: 100%;
+  }
+  
+  .unfollow-btn {
+    width: 100%;
+  }
+}

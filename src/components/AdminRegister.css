@@ -1,0 +1,130 @@
+.admin-register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1a2a3a;
+  padding: 20px;
+}
+
+.admin-register-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+}
+
+.admin-register-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.admin-register-header h1 {
+  color: #1a2a3a;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.admin-register-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.admin-register-error {
+  background-color: #fff1f0;
+  border: 1px solid #ffccc7;
+  color: #cf1322;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.admin-register-success {
+  background-color: #f6ffed;
+  border: 1px solid #b7eb8f;
+  color: #52c41a;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.admin-register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-group input {
+  padding: 12px 15px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #1a73e8;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.admin-register-button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.admin-register-button:hover {
+  background-color: #1557b0;
+}
+
+.admin-register-button:disabled {
+  background-color: #a0c3ff;
+  cursor: not-allowed;
+}
+
+.admin-register-footer {
+  margin-top: 25px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.admin-register-footer a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.admin-register-footer a:hover {
+  text-decoration: underline;
+}
+
+.admin-register-help {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+}
